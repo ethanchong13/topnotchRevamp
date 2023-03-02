@@ -15,7 +15,7 @@ const JoinusCard = () => {
     // transition={{ type: "spring", stiffness: 100, damping: 10}}
     layout
       onClick={()=>setIsOpen(true)}
-      className={`text-${isOpen? 'left w-auto':'center w-60 h-64'} bg-stone-200 py-8 px-6 mx-2 my-4 hover:bg-yellow-600 hover:text-slate-200`}
+      className={`text-${isOpen? 'left w-auto':'center w-60 h-64'} bg-stone-200 py-8 px-6 mx-2 my-4 hover:bg-lime-800 hover:text-slate-200`}
       style={{borderRadius:'1rem'}}
     >
         <motion.div className={`grid justify-items-end text-stone-500 ${isOpen&& 'hidden'}`}><BsFillPlusCircleFill /></motion.div>
@@ -28,8 +28,8 @@ const JoinusCard = () => {
             animate={{opacity:1}}
             transition={{duration:1}}
             className=' w-96'>
-            <p className='py-4 leading-6 px-3'>Exmple, Hello welcome to topnotch~ </p>
-            <p className='pb-4 leading-6 px-3'>Collapsible components put long sections of information under a block, which enables users to expand and access its features. The uniqueness of being a developer is implementing anything to be built in a particular way. In our case, we want animated collapsible components. Though libraries like react-collapse could help, you may want to build these things yourself.</p>
+            <p className='py-4 leading-6 px-3'>Want to be a part of this fast-growing HR firm? Drop us your updated CV at</p>
+            <p className='pb-4 leading-6 px-3'> talent.acq@topnotchgroup.com.my </p>
           </motion.div>
         ):null}
         

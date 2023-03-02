@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {motion, AnimatePresence} from 'framer-motion'
 import OutsideClickHandler from 'react-outside-click-handler'
-import { BsFillPlusCircleFill } from 'react-icons/bs'
+import { BsFillPlusCircleFill , BsArrowReturnRight} from 'react-icons/bs'
 
 const OurstoryCard = () => {
   
@@ -18,21 +18,26 @@ const OurstoryCard = () => {
       className={`text-${isOpen? 'left w-auto':'center w-60 h-80'} bg-stone-200 py-8 px-6 mx-2 my-4 hover:bg-yellow-900 hover:text-slate-200`}
       style={{borderRadius:'1rem'}}
     >
-      <motion.div className='grid justify-items-end text-yellow-600'>
+      <motion.div className='grid justify-items-end text-stone-500'>
             <BsFillPlusCircleFill />
         </motion.div>
-        <motion.div className={`flex items-end h-${isOpen ? '2': '48'} mr-16`}>
-        <motion.h2 layout="position" className='text-2xl font-light text-left'>Our Story</motion.h2>
+        <motion.div className={`flex items-end ${isOpen ? 'h-14': 'h-48'} mr-16`}>
+        <motion.h2 layout="position" className={`${isOpen&&'px-3 py-3'} text-2xl font-light text-left`}>Our Story</motion.h2>
         </motion.div>
         {isOpen ? (
             <motion.div 
             initial={{opacity:0}}
             animate={{opacity:1}}
             transition={{duration:1}}
-            className=' w-96'>
-            <p className='pt-4 leading-6'>Exmple, Hello welcome to topnotch~ </p>
-            <p className='pt-4 leading-6 inline'>Collapsible components put long sections of information under a block, which enables users to expand and access its features. The uniqueness of being a developer is implementing anything to be built in a particular way. In our case, we want animated collapsible components. Though libraries like react-collapse could help, you may want to build these things yourself.</p>
-          </motion.div>
+            className=''>
+            <p className='py-4 px-3 leading-6'>Whether it's executive search, contracting, or outsourced payroll, we're a team of highly dedicated HR professionals in Malaysia ready at your service.</p>
+            <motion.div className='flex'>
+            <motion.button
+            whileHover={{scale:1.05}}
+            transition={{type:"spring"}}
+            className='py-2 px-3 hover:underline'><a className='flex items-center'><BsArrowReturnRight /> &nbsp;Learn more</a></motion.button>
+            </motion.div>
+        </motion.div>
         ):null}
         
     </motion.div>

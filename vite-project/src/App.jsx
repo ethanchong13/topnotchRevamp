@@ -13,9 +13,7 @@ import OurstoryCard from './Components/MainMenu/OurstoryCard'
 import CareertipsCard from './Components/MainMenu/CareertipsCard'
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [clickedId,setClickedId] = useState()
-  console.log(clickedId)
+  
   return (
     <div className="">
       <motion.div className="w-auto">
