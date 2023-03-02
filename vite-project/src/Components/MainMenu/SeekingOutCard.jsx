@@ -34,8 +34,8 @@ const SeekingOutCard = () => {
             animate={{opacity:1}}
             transition={{duration:1}}
             className=' w-96'>
-            <p className='pt-4 leading-6'>Exmple, Hello welcome to topnotch~ </p>
-            <p className='pt-4 leading-6 inline'>Collapsible components put long sections of information under a block, which enables users to expand and access its features. The uniqueness of being a developer is implementing anything to be built in a particular way. In our case, we want animated collapsible components. Though libraries like react-collapse could help, you may want to build these things yourself.</p>
+            <p className='pt-4 leading-6'>Find your next job with us. </p>
+            {/* <p className='pt-4 leading-6 inline'>Collapsible components put long sections of information under a block, which enables users to expand and access its features. The uniqueness of being a developer is implementing anything to be built in a particular way. In our case, we want animated collapsible components. Though libraries like react-collapse could help, you may want to build these things yourself.</p> */}
           </motion.div>
         ):null}
         

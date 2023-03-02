@@ -20,7 +20,7 @@ const OutsourcedPayrollCard = () => {
       style={{borderRadius:'1rem'}}
     >
         <motion.div className={`grid justify-items-end text-stone-500 ${isOpen&& 'hidden'}`}><BsFillPlusCircleFill /></motion.div>
-        <motion.div className={`flex items-end h-${isOpen ? '2': '44'} mr-16`}>
+        <motion.div className={`flex items-end ${isOpen ? 'h-14': 'h-44'} mr-16`}>
         <motion.h2 layout="position" className={`${isOpen&&'px-3'} text-2xl font-light text-left`}>Outsourced Payroll</motion.h2>
         </motion.div>
         {isOpen ? (
@@ -29,8 +29,8 @@ const OutsourcedPayrollCard = () => {
             animate={{opacity:1}}
             transition={{duration:1}}
             className=' w-96'>
-            <p className='py-4 leading-6 px-3'>Exmple, Hello welcome to topnotch~ </p>
-            <p className='pb-4 leading-6 px-3'>Collapsible components put long sections of information under a block, which enables users to expand and access its features. The uniqueness of being a developer is implementing anything to be built in a particular way. In our case, we want animated collapsible components. Though libraries like react-collapse could help, you may want to build these things yourself.</p>
+            <p className='py-4 leading-6 px-3'>We provide companies with better flexibility and agility to manage your contracting workforce. Besides assisting companies with contract staffing, we also provide clients with highly-digitized end-to-end HR administration support that includes payrolling, onboarding, annual leave, contracts, claims, and more. </p>
+            {/* <p className='pb-4 leading-6 px-3'>Collapsible components put long sections of information under a block, which enables users to expand and access its features. The uniqueness of being a developer is implementing anything to be built in a particular way. In our case, we want animated collapsible components. Though libraries like react-collapse could help, you may want to build these things yourself.</p> */}
           </motion.div>
         ):null}
         
