@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {motion, AnimatePresence} from 'framer-motion'
 import OutsideClickHandler from 'react-outside-click-handler'
 import { BsFillPlusCircleFill , BsArrowReturnRight} from 'react-icons/bs'
+import OurStoryImage from '../../assets/Images/team_image_01.jpg'
 
 const OurstoryCard = () => {
   
@@ -15,14 +16,17 @@ const OurstoryCard = () => {
     // transition={{ type: "spring", stiffness: 100, damping: 10}}
     layout
       onClick={()=>setIsOpen(true)}
-      className={`text-${isOpen? 'left w-auto':'center w-60 h-80'} bg-stone-200 py-8 px-6 mx-2 my-4 hover:bg-yellow-900 hover:text-slate-200`}
+      className={`text-${isOpen? 'left w-auto':'center w-60 h-80'} py-8 px-6 mx-2 my-4 text-slate-200 bg-[url('/src/assets/Images/team_image_01.jpg')] bg-center bg-cover grayscale hover:grayscale-0`}
       style={{borderRadius:'1rem'}}
     >
+
       <motion.div className='grid justify-items-end text-stone-500'>
             <BsFillPlusCircleFill />
         </motion.div>
-        <motion.div className={`flex items-end ${isOpen ? 'h-14': 'h-48'} mr-16`}>
-        <motion.h2 layout="position" className={`${isOpen&&'px-3 py-3'} text-2xl font-light text-left`}>Our Story</motion.h2>
+        {/* <div className='w-32 h-52 bg-red-500'>
+        </div> */}
+        <motion.div className={`flex items-end ${isOpen ? 'h-14': 'h-52'} mr-16`}>
+        <motion.h2 layout="position" className={`${isOpen ? 'px-3 py-3': 'ml-3'} text-2xl font-light text-left`}>Our Story</motion.h2>
         </motion.div>
         {isOpen ? (
             <motion.div 
