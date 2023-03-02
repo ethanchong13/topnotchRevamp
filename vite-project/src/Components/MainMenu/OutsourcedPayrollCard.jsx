@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import {motion, AnimatePresence} from 'framer-motion'
 import OutsideClickHandler from 'react-outside-click-handler'
-import {BsFillPlusCircleFill} from 'react-icons/bs'
-import{ IconContext} from 'react-icons';
+import {BsFillPlusCircleFill , BsArrowReturnRight} from 'react-icons/bs'
 
 const OutsourcedPayrollCard = () => {
   
@@ -21,7 +20,7 @@ const OutsourcedPayrollCard = () => {
     >
         <motion.div className={`grid justify-items-end text-stone-500 ${isOpen&& 'hidden'}`}><BsFillPlusCircleFill /></motion.div>
         <motion.div className={`flex items-end ${isOpen ? 'h-14': 'h-44'} mr-16`}>
-        <motion.h2 layout="position" className={`${isOpen&&'px-3'} text-2xl font-light text-left`}>Outsourced Payroll</motion.h2>
+        <motion.h2 layout="position" className={`${isOpen&&'px-3 py-3'} text-2xl font-light text-left`}>Outsourced Payroll</motion.h2>
         </motion.div>
         {isOpen ? (
             <motion.div 
@@ -30,7 +29,12 @@ const OutsourcedPayrollCard = () => {
             transition={{duration:1}}
             className=' w-96'>
             <p className='py-4 leading-6 px-3'>We provide companies with better flexibility and agility to manage your contracting workforce. Besides assisting companies with contract staffing, we also provide clients with highly-digitized end-to-end HR administration support that includes payrolling, onboarding, annual leave, contracts, claims, and more. </p>
-            {/* <p className='pb-4 leading-6 px-3'>Collapsible components put long sections of information under a block, which enables users to expand and access its features. The uniqueness of being a developer is implementing anything to be built in a particular way. In our case, we want animated collapsible components. Though libraries like react-collapse could help, you may want to build these things yourself.</p> */}
+            <motion.div className='flex'>
+            <motion.button
+            whileHover={{scale:1.05}}
+            transition={{type:"spring"}}
+            className='py-2 px-3 hover:underline'><a className='flex items-center' href="https://zom-in.com/spiceIn"><BsArrowReturnRight /> &nbsp;Learn more</a></motion.button>
+            </motion.div>
           </motion.div>
         ):null}
         
