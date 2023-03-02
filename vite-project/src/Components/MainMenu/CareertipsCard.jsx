@@ -19,7 +19,7 @@ const CareertipsCard = () => {
       style={{borderRadius:'1rem'}}
     >
         <motion.div className={`grid justify-items-end text-stone-500 ${isOpen&& 'hidden'}`}><BsFillPlusCircleFill /></motion.div>
-        <motion.div className={`flex items-end h-${isOpen ? '2':'28'} mr-16`}>
+        <motion.div className={`flex items-end ${isOpen ? 'h-14':'h-28'} mr-16`}>
         <motion.h2 layout="position" className={`${isOpen&&'px-3'} text-2xl font-light text-left`}>Career Tips</motion.h2>
         </motion.div>
         {isOpen ? (
