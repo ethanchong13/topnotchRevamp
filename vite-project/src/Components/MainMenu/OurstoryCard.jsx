@@ -16,11 +16,11 @@ const OurstoryCard = () => {
     // transition={{ type: "spring", stiffness: 100, damping: 10}}
     layout
       onClick={()=>setIsOpen(true)}
-      className={`text-${isOpen? 'left w-auto':'center w-60 h-80'} py-8 px-6 mx-2 my-4 text-slate-200 bg-[url('/src/assets/Images/team_image_01.jpg')] bg-center bg-cover grayscale hover:grayscale-0`}
+      className={`text-${isOpen? 'left w-auto':'center w-60 h-80'} py-8 px-6 mx-2 my-4 text-white bg-[url('/src/assets/Images/team_image_01.jpg')] bg-center bg-cover grayscale hover:grayscale-0`}
       style={{borderRadius:'1rem'}}
     >
 
-      <motion.div className='grid justify-items-end text-stone-500'>
+      <motion.div className={`grid justify-items-end text-stone-500 ${isOpen&& 'hidden'}`}>
             <BsFillPlusCircleFill />
         </motion.div>
         {/* <div className='w-32 h-52 bg-red-500'>
@@ -39,7 +39,7 @@ const OurstoryCard = () => {
             <motion.button
             whileHover={{scale:1.05}}
             transition={{type:"spring"}}
-            className='py-2 px-3 hover:underline'><a className='flex items-center'><BsArrowReturnRight /> &nbsp;Learn more</a></motion.button>
+            className='py-2 px-3'><a className='flex items-center hover:underline hover:text-slate-200'><BsArrowReturnRight /> &nbsp;Learn more</a></motion.button>
             </motion.div>
         </motion.div>
         ):null}

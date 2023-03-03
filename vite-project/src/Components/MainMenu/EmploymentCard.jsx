@@ -38,7 +38,7 @@ const EmploymentCard = () => {
             <motion.button
             whileHover={{scale:1.05}}
             transition={{type:"spring"}}
-            className='py-2 px-3 hover:underline'><a className='flex items-center'><BsArrowReturnRight /> &nbsp;Learn more</a></motion.button>
+            className='py-2 px-3'><a className='flex items-center hover:underline hover:text-slate-200'><BsArrowReturnRight /> &nbsp;Learn more</a></motion.button>
             </motion.div>
           </motion.div>
         ):null}
