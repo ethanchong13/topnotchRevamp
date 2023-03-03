@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import {motion, AnimatePresence} from 'framer-motion'
+import {motion} from 'framer-motion'
 import OutsideClickHandler from 'react-outside-click-handler'
 import { BsFillPlusCircleFill , BsArrowReturnRight} from 'react-icons/bs'
-import OurStoryImage from '../../assets/Images/team_image_01.jpg'
 
 const OurstoryCard = () => {
   
@@ -16,8 +15,7 @@ const OurstoryCard = () => {
     // transition={{ type: "spring", stiffness: 100, damping: 10}}
     layout
       onClick={()=>setIsOpen(true)}
-      className={`text-${isOpen? 'left w-auto':'center w-60 h-80'} py-8 px-6 mx-2 my-4 text-white bg-[url('/src/assets/Images/team_image_01.jpg')] bg-center bg-cover grayscale hover:grayscale-0`}
-      style={{borderRadius:'1rem'}}
+      className={`text-${isOpen? 'left w-96':'center w-60 h-80'} py-8 px-6 mx-2 my-4 text-white bg-[url('/src/assets/Images/team_image_01.jpg')] bg-center bg-cover grayscale hover:grayscale-0 rounded-2xl`}
     >
 
       <motion.div className={`grid justify-items-end text-stone-500 ${isOpen&& 'hidden'}`}>
