@@ -11,12 +11,14 @@ import CareertipsCard from '../Components/MainMenu/CareertipsCard'
 
 const Home = () => {
   return (
-    <motion.div className="min-h-screen w-screen flex place-items-center">
-      <LayoutGroup>
     
-      <motion.div className='flex items-end my-0 mx-auto'>
-        
-        <motion.div>
+    <motion.div className="flex min-w-max w-screen">
+      
+    
+      <motion.div className='flex w-full min-h-screen place-items-center justify-center'>
+        <LayoutGroup>
+          <motion.div className='place-items-end flex'>
+          <motion.div>
         <TopNotchCard/>
         <SeekingOutCard />
         </motion.div>
@@ -35,9 +37,11 @@ const Home = () => {
         <CareertipsCard />
         <OurstoryCard />
         </motion.div>
-      </motion.div>
+          </motion.div>
+  
+        </LayoutGroup>
+      </motion.div> 
 
-      </LayoutGroup>
       </motion.div>
   )
 }
