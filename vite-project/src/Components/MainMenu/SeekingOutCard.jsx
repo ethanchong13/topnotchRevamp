@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {motion, AnimatePresence} from 'framer-motion'
+import {motion} from 'framer-motion'
 import OutsideClickHandler from 'react-outside-click-handler'
 import { BsArrowRightCircle } from 'react-icons/bs'
 import {IconContext} from 'react-icons'
@@ -16,8 +16,7 @@ const SeekingOutCard = () => {
     // transition={{ type: "spring", stiffness: 100, damping: 10}}
     layout
       onClick={()=>setIsOpen(true)}
-      className={`text-${isOpen? 'left w-80':'center w-60 h-80'} bg-stone-200 py-8 px-6 mx-2 my-4 hover:bg-blue-900 hover:text-slate-200`}
-      style={{borderRadius:'1rem'}}
+      className={`text-${isOpen? 'left w-80':'center w-60 h-80'} bg-stone-200 py-8 px-6 mx-2 my-4 hover:bg-blue-900 hover:text-slate-200 rounded-2xl`}
     >
         <motion.div className={`flex items-end ${isOpen ? 'h-12':'h-48'} h- mr-16`}>
         <motion.h2 layout="position" className={`${isOpen&&'px-3 py-3'} text-2xl font-light text-left`}>SEEKING OUT?</motion.h2>

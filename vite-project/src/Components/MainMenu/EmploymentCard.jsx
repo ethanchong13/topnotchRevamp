@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import {motion, AnimatePresence} from 'framer-motion'
+import {motion} from 'framer-motion'
+import { Link } from "react-router-dom";
 import OutsideClickHandler from 'react-outside-click-handler'
 import { BsFillPlusCircleFill , BsArrowReturnRight } from 'react-icons/bs'
 import { MdMiscellaneousServices} from 'react-icons/md'
@@ -17,8 +18,7 @@ const EmploymentCard = () => {
     // transition={{ type: "spring", stiffness: 100, damping: 10}}
     layout
       onClick={()=>setIsOpen(true)}
-      className={`text-${isOpen? 'left w-96':'center w-60 h-64'} bg-stone-200 py-8 px-6 mx-2 my-4 hover:bg-lime-800 hover:text-slate-200`}
-      style={{borderRadius:'1rem'}}
+      className={`text-${isOpen? 'left w-96':'center w-60 h-64'} bg-stone-200 py-8 px-6 mx-2 my-4 hover:bg-lime-800 hover:text-slate-200 rounded-2xl`}
     >
         <motion.div className={`grid justify-items-end text-stone-500 ${isOpen&& 'hidden'}`}><BsFillPlusCircleFill /></motion.div>
         <motion.div className={`flex items-end ${isOpen ? 'h-14':'h-44'}  mr-16`}>
@@ -38,7 +38,7 @@ const EmploymentCard = () => {
             <motion.button
             whileHover={{scale:1.05}}
             transition={{type:"spring"}}
-            className='py-2 px-3'><a className='flex items-center hover:underline hover:text-slate-200'><BsArrowReturnRight /> &nbsp;Learn more</a></motion.button>
+            className='py-2 px-3'><Link to="EmploymentSolution" className='flex items-center hover:underline hover:text-slate-200'><BsArrowReturnRight /> &nbsp;Learn more</Link></motion.button>
             </motion.div>
           </motion.div>
         ):null}
