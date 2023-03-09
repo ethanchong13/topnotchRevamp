@@ -1,25 +1,56 @@
 import React from 'react'
-import TopnotchLogo from '../assets/Images/topnotch_onlylogo.png'
+import {motion , useScroll} from 'framer-motion'
+
+import Header from '../Components/LandingPage/Header'
+import Intro from '../Components/LandingPage/Intro'
+import TalentIdentificationImage from '../assets/Images/EmploymentSolution/TalentIdentification.svg'
+import ProfessionalContractingImage from '../assets/Images/EmploymentSolution/ProfessionalContracting.svg'
+import HRStrategiesImage from '../assets/Images/EmploymentSolution/HRStrategies.svg'
 
 const EmploymentSolutionLanding = () => {
   return (
     <div className='flex min-w-max overflow-hidden'>
         <div className='min-w-full block'>
-          <div className='mx-24 border-b flex'>
-              <img className='py-8' src={TopnotchLogo} width="150" alt="TopNotch Logo"></img>            
-          </div>
-          <div className='block py-36'>
-                <div className='flex justify-center mx-40 mb-10'>
-                  <div className='block'>
-                    <h1 className='text-[4.5rem] tracking-widest font-semibold text-topnotch-blue text-center'>TALENT BEYOND</h1>                
-                    <h1 className='text-[4.5rem] tracking-widest font-semibold text-center text-topnotch-yellow'>EXCELLENCE</h1>
-                  <div className='w-[50rem] py-10'>
-                  <h5 className='text-center tracking-wider font-light text-[1.2rem] text-topnotch-grey'>Whether it's <b className='font-semibold'>executive search, contracting</b> or <b className='font-semibold'>outsourced payroll</b>, we're a team of highly dedicated <b className='font-semibold underline-offset-8 underline decoration-topnotch-yellow decoration-4'>HR professionals in Malaysia</b> ready at your service.</h5>
-                  </div>
-                  </div>
-                </div>
-          </div> 
+          <Header />
+          <Intro />
+         
+          <motion.div 
           
+          className=' mx-36 block text-center'>
+            <div className='my-16'>
+            <p className='text-[3.5rem] font-semibold text-topnotch-blue underline-offset-[15px] underline decoration-topnotch-yellow decoration-[5px]'>
+              Services
+            </p>
+            </div>
+            <motion.div className='flex justify-between'
+            // initial={{opacity:0}}
+            // whileInView={{opacity:1}}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 1, type:"spring"}}
+            >
+              <div className='w-60'>
+              <div className='h-60'>
+              <img className=' inline' src={TalentIdentificationImage} width="200" alt="TopNotch Logo"></img>
+              </div>
+              <h1 className='text-center tracking-wider font-light text-[1.5rem] text-topnotch-blue'>Talent Identification</h1>
+              </div>
+              <div className='w-60'>
+              <div className='h-60'>
+              <img className='inline' src={ProfessionalContractingImage} width="200" alt="TopNotch Logo"></img>
+              </div>
+              <h1 className='block text-center tracking-wider font-light text-[1.5rem] text-topnotch-blue leading-normal'>Professional contracting services</h1>
+              </div>
+              <div className='w-60'>
+              <div className='h-60'>
+              <img className='inline' src={HRStrategiesImage} width="200" alt="TopNotch Logo"></img>
+              </div>
+              <h1 className='block text-center tracking-wider font-light text-[1.5rem] text-topnotch-blue leading-normal'>HR Strategies Consultation</h1>
+              </div>
+            </motion.div>
+          </motion.div>
+
         </div>
     </div>
   )

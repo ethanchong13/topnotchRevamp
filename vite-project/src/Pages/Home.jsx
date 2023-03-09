@@ -15,7 +15,8 @@ const Home = () => {
     <motion.div className="flex min-w-max w-screen">
       
     
-      <motion.div className='flex w-full min-h-screen place-items-center justify-center'>
+      <motion.div className='flex w-full min-h-screen place-items-center justify-center'
+      >
         <LayoutGroup>
           <motion.div className='place-items-end flex'>
           <motion.div>
