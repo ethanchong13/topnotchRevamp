@@ -13,6 +13,7 @@ const EmploymentCard = () => {
   return (
     <OutsideClickHandler onOutsideClick={()=>setIsOpen(false)}>
       <motion.div whileHover={{scale:1.05 }}
+      
       transition={{type:"spring"}}
     //    transition={{layout:{duration:1,type:"spring"}}} 
     // transition={{ type: "spring", stiffness: 100, damping: 10}}
