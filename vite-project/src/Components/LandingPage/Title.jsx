@@ -7,7 +7,7 @@ const Title = ({ title }) => {
       initial={{ y: "-5vh", opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: "1" }}
-      className="my-28"
+      className=" my-28 justify-center text-center flex"
     >
       <p className="text-[3.5rem] font-semibold text-topnotch-blue underline-offset-[15px] underline decoration-topnotch-yellow decoration-[5px]">
         {title}

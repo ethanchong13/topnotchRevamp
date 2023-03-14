@@ -18,7 +18,7 @@ const DetailsCard = ({ title, details }) => {
         initial={{ x: "+3vh", opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: "1" }}
-        className="w-3/5 px-10 text-slate-200 tracking-wider mr-36 leading-7 text-sm"
+        className="w-3/5 px-10 text-slate-200 tracking-wider leading-7 text-sm"
       >
         <p>{details}</p>
       </motion.div>
