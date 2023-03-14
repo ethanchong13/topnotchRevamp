@@ -9,9 +9,8 @@ import Title from "../LandingPage/Title";
 
 const Services = () => {
   return (
-    <motion.div className=" mx-36 block text-center">
+    <motion.div className="mx-auto my-28 px-20 block text-center">
       {/* Title */}
-      <Title title="Employment Solution" />
       <motion.div
         className="flex justify-between"
         initial={{ y: "+10vh", opacity: 0 }}

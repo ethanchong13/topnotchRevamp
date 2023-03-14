@@ -7,7 +7,7 @@ import ServicesData from "../../Datas/ServicesData";
 const ServicesDetails = () => {
   return (
     <motion.div className="my-20 justify-center">
-      <motion.div className=" w-full py-24 bg-topnotch-yellow">
+      <motion.div className=" w-full py-24 px-14 bg-topnotch-yellow">
         {ServicesData.map((data) => (
           <DetailsCard
             title={data.title}

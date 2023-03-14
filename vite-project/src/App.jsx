@@ -1,19 +1,26 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom";
 
-import './App.css'
-import EmploymentSolutionLanding from "./Pages/EmploymentSolutionLanding"
-import Home from './Pages/Home'
+import "./App.css";
+import EmploymentSolutionLanding from "./Pages/EmploymentSolutionLanding";
+import Home from "./Pages/Home";
+import OutsourcedPayrollLanding from "./Pages/OutsourcedPayrollLanding";
 
 function App() {
-  
   return (
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/EmploymentSolution" element={<EmploymentSolutionLanding />}/>
+        <Route
+          path="/EmploymentSolution"
+          element={<EmploymentSolutionLanding />}
+        />
+        <Route
+          path="/OutsourcedPayroll"
+          element={<OutsourcedPayrollLanding />}
+        />
       </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

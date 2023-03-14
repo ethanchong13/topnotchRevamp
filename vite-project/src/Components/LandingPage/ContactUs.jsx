@@ -6,9 +6,9 @@ const ContactUs = () => {
   return (
     <motion.div className="w-full flex justify-center my-32">
       <motion.div className="text-center">
-        <motion.h1 className=" text-8xl font-semibold my-10 flex text-topnotch-blue tracking-wide">
-          Let's work&nbsp;<span className="text-topnotch-yellow">together</span>
-        </motion.h1>
+        <motion.div className=" text-8xl font-semibold my-10 text-topnotch-blue tracking-wide">
+          Let's work <span className="text-topnotch-yellow">together</span>
+        </motion.div>
         <motion.p
           initial={{ y: "+3vh", opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
