@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'body': ['"Montserrat"', ...defaultTheme.fontFamily.sans],
+        sans: ['"Open Sans"', 'sans-serif']
       },
       colors:{
         'topnotch-blue':'#1c325d',

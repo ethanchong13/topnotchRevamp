@@ -22,7 +22,7 @@ const EmploymentSolutionLanding = () => {
             <motion.div
             initial = {{y:'-5vh' , opacity:0}}
             animate = {{y:0, opacity:1}}
-            transition={{duration:'1'}}
+            transition={{duration:'1.5'}}
             className='my-28'>
             <p className='text-[3.5rem] font-semibold text-topnotch-blue underline-offset-[15px] underline decoration-topnotch-yellow decoration-[5px]'>
               Employment Solution
@@ -32,7 +32,7 @@ const EmploymentSolutionLanding = () => {
             <motion.div className='flex justify-between'
             initial = {{y:'+5vh' , opacity:0}}
             animate = {{y:0, opacity:1}}
-            transition={{duration:'1'}}
+            transition={{duration:'1.5'}}
             >
               <motion.div className='w-60'
               >
@@ -129,8 +129,10 @@ const EmploymentSolutionLanding = () => {
                 className='text-topnotch-grey text-lg'>
                   Contact us for more information
                 </motion.p>
-                <motion.div className='my-10 text-5xl text-topnotch-blue font-light tracking-wide'>
-                  <button className='rounded-full border-4 px-24 py-5 border-topnotch-yellow'>Contact Us</button>
+                <motion.div className='my-10 text-4xl text-topnotch-blue tracking-wide'>
+                  <button 
+                  onClick={() => window.location = 'mailto:haoyin_chong@hotmail.com'}
+                  className='rounded-full border-4 px-24 py-5 border-topnotch-yellow'>Contact Us</button>
                 </motion.div>
               </motion.div>
             </motion.div>
