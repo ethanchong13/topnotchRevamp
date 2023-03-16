@@ -23,8 +23,6 @@ const Intro = ({ title, details }) => {
             className="w-full py-10 justify-center flex text-center"
             initial={{ y: "+5vh", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            // initial={{opacity:0, scale:0.3}}
-            // animate={{opacity:1, scale:1}}
             transition={{ duration: "1" }}
           >
             <h5 className="text-center tracking-wider font-light text-[1.2rem] text-topnotch-grey">
