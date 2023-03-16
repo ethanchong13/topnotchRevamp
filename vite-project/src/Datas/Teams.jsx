@@ -1,5 +1,9 @@
 const Teams = [
-  { id: 1, team: "Comliance Team", description: "Provide after-sales service" },
+  {
+    id: 1,
+    team: "Compliance Team",
+    description: "Provide after-sales service",
+  },
   {
     id: 2,
     team: "TA Team",
