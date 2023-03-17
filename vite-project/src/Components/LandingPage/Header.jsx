@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="w-full px-24 sticky top-0 left-0 right-0 z-10 backdrop-blur bg-white/60">
+    <nav className="w-full px-24 sticky top-0 left-0 right-0 z-10 backdrop-blur bg-white/60">
       <motion.div
         initial={{ x: "-100vw" }}
         animate={{ x: 0 }}
@@ -20,7 +20,7 @@ const Header = () => {
           ></img>
         </Link>
       </motion.div>
-    </header>
+    </nav>
   );
 };
 

@@ -9,7 +9,7 @@ import Title from "../Components/LandingPage/Title";
 
 const EmploymentSolutionLanding = () => {
   return (
-    <div className="block">
+    <div>
       {/* Logo nav bar */}
       <Header />
 
@@ -23,7 +23,12 @@ const EmploymentSolutionLanding = () => {
       <ServicesDetails />
 
       {/* Contact Us */}
-      <ContactUs />
+      <ContactUs
+        bluetext="Let's work "
+        yellowtext="together"
+        description="Contact us for more information"
+        buttontext="Contact Us"
+      />
     </div>
   );
 };

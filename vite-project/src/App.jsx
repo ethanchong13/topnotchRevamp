@@ -4,6 +4,7 @@ import "./App.css";
 import EmploymentSolutionLanding from "./Pages/EmploymentSolutionLanding";
 import Home from "./Pages/Home";
 import OutsourcedPayrollLanding from "./Pages/OutsourcedPayrollLanding";
+import SeekingOut from "./Pages/SeekingOut";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           path="/OutsourcedPayroll"
           element={<OutsourcedPayrollLanding />}
         />
+        <Route path="/SeekingOut" element={<SeekingOut />} />
       </Routes>
     </div>
   );
