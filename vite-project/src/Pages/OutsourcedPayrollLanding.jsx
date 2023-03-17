@@ -17,7 +17,12 @@ const OutsourcedPayrollLanding = () => {
       />
       <MeettheTeam />
       {/* Contact Us */}
-      <ContactUs />
+      <ContactUs
+        bluetext="Let's work "
+        yellowtext="together"
+        description="Contact us for more information"
+        buttontext="Contact Us"
+      />
     </div>
   );
 };
