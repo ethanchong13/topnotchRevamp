@@ -1,5 +1,6 @@
 import React from "react";
 import ContactUs from "../Components/LandingPage/ContactUs";
+import Footer from "../Components/LandingPage/Footer";
 import Header from "../Components/LandingPage/Header";
 import Intro from "../Components/LandingPage/Intro";
 import Title from "../Components/LandingPage/Title";
@@ -23,6 +24,7 @@ const OutsourcedPayrollLanding = () => {
         description="Contact us for more information"
         buttontext="Contact Us"
       />
+      <Footer />
     </div>
   );
 };

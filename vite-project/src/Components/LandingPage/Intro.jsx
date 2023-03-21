@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 
 const Intro = ({ title, details }) => {
   return (
-    <motion.div className="block py-36">
-      <div className="flex justify-center mx-40 mb-10">
+    <motion.div className=" my-32">
+      <div className="flex justify-center px-16 ">
         <div>
           <motion.div
-            initial={{ y: "-5vh", opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: "1" }}
+          // initial={{ y: "-5vh", opacity: 0 }}
+          // animate={{ y: 0, opacity: 1 }}
+          // transition={{ duration: "1" }}
           >
             <h1 className="text-[4.5rem] tracking-widest font-semibold bg-gradient-to-r from-topnotch-blue to-topnotch-yellow text-transparent bg-clip-text text-center">
               {/* TALENT BEYOND */}
@@ -21,11 +21,11 @@ const Intro = ({ title, details }) => {
           </motion.div>
           <motion.div
             className="w-full py-10 justify-center flex text-center"
-            initial={{ y: "+5vh", opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: "1" }}
+            // initial={{ y: "+5vh", opacity: 0 }}
+            // animate={{ y: 0, opacity: 1 }}
+            // transition={{ duration: "1" }}
           >
-            <h5 className="text-center tracking-wider font-light text-[1.2rem] text-topnotch-grey">
+            <h5 className="text-center tracking-wider font-light text-[21px] text-topnotch-grey max-w-[880px]">
               {/* Whether it's
               <b className="font-semibold">executive search, contracting</b> or
               <b className="font-semibold">outsourced payroll</b>, we're a team

@@ -1,18 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const ServicesCard = ({ title, image }) => {
+const ServicesCard = ({ title, img }) => {
   return (
-    <motion.div className="w-60 mx-5">
-      <div className="h-60">
+    <motion.div className="flex-1">
+      <div className="flex justify-center flex-col items-center">
         <img
-          className=" inline"
-          src={image}
-          width="200"
+          className="w-[300px] h-[200px] object-contain md:mt-0 mt-10"
+          src={img}
           alt="ServicesLogo"
         ></img>
       </div>
-      <h1 className="text-center tracking-wider font-light text-[1.5rem] text-topnotch-blue">
+      <h1 className="mt-10 text-center tracking-wider font-light text-[1.5rem] text-topnotch-blue">
         {title}
       </h1>
     </motion.div>

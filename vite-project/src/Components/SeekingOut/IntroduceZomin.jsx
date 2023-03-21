@@ -5,12 +5,12 @@ import ZominGadget from "../../assets/Images/zomin_gadget.png";
 
 const IntroduceZomin = () => {
   return (
-    <div className="w-full sm:flex p-10">
-      <div className="sm:w-1/2 text-start items-center pl-20 py-10">
+    <section className="flex sm:flex-row flex-col py-10 px-24">
+      <div className=" text-start items-center sm:mr-20 py-10 flex-1">
         <h1 className="text-[3rem] my-8 text-topnotch-blue font-semibold">
-          Introduce ZOM-IN
+          Introduce <span className="inline">ZOM-IN</span>
         </h1>
-        <p className="text-topnotch-grey">
+        <p className="text-topnotch-grey max-w-[580px]">
           ZOM-IN is an online job-search and career-enhancement platform
           established in 2018 to address the problem of fresh graduates being
           subjectively rejected by corporates- being perceived as overly
@@ -39,10 +39,10 @@ const IntroduceZomin = () => {
           </button>
         </div>
       </div>
-      <div className="sm:w-1/2 flex items-center justify-center">
+      <div className=" flex items-center justify-center flex-1">
         <img src={ZominGadget} alt="zomin_in_gadget" className=" w-[30rem]" />
       </div>
-    </div>
+    </section>
   );
 };
 
