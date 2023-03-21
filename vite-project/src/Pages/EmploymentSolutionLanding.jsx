@@ -6,6 +6,7 @@ import ContactUs from "../Components/LandingPage/ContactUs";
 import Services from "../Components/EmploymentSolution/Services";
 import ServicesDetails from "../Components/EmploymentSolution/ServicesDetails";
 import Title from "../Components/LandingPage/Title";
+import Footer from "../Components/LandingPage/Footer";
 
 const EmploymentSolutionLanding = () => {
   return (
@@ -29,6 +30,7 @@ const EmploymentSolutionLanding = () => {
         description="Contact us for more information"
         buttontext="Contact Us"
       />
+      <Footer />
     </div>
   );
 };

@@ -1,5 +1,61 @@
+import { service1 , service2 ,service3 ,team1 ,team2,team3,team4,team5,team6,team7,team8} from "../assets/Images";
+
 export const email = "talent.acq@topnotchgroup.com.my"
 
+export const services = [
+  {
+    id: 1,
+    title: "Talent Identification",
+    img: service1
+   
+  },
+  {
+    id: 2,
+    title: "Professional Contracting Services",
+    img: service2
+  },
+  {
+    id: 2,
+    title: "HR Strategies Consultation",
+    img: service3
+  },
+];
+
+export const teamImage =[
+  {
+    id:1,
+    img:team1
+  },
+  {
+    id:2,
+    img:team2
+  },
+  {
+    id:3,
+    img:team3
+  },
+  {
+    id:4,
+    img:team4
+  },
+  {
+    id:5,
+    img:team5
+  },
+  {
+    id:6,
+    img:team6
+  },
+  {
+    id:7,
+    img:team7
+  },
+  {
+    id:8,
+    img:team8
+  },
+  
+]
 export const servicesData = [
     {
       id: 1,

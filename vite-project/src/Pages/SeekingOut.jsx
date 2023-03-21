@@ -1,5 +1,6 @@
 import React from "react";
 import ContactUs from "../Components/LandingPage/ContactUs";
+import Footer from "../Components/LandingPage/Footer";
 import Header from "../Components/LandingPage/Header";
 import IntroduceZomin from "../Components/SeekingOut/IntroduceZomin";
 
@@ -18,6 +19,8 @@ const SeekingOut = () => {
         description="Can’t find any suitable roles on ZOM-IN for the time being? Drop us your updated CV, our professional consultants will reach out to you in no time. "
         buttontext="Email Us"
       />
+
+      <Footer />
     </div>
   );
 };
