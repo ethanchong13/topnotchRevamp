@@ -39,14 +39,6 @@ export const teamImage =[
     img:team4
   },
   {
-    id:5,
-    img:team5
-  },
-  {
-    id:6,
-    img:team6
-  },
-  {
     id:7,
     img:team7
   },

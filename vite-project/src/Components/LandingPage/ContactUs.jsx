@@ -5,7 +5,7 @@ import { email } from "../../constants";
 const ContactUs = ({ bluetext, yellowtext, description, buttontext }) => {
   return (
     <section className="w-full flex flex-col justify-center items-center my-20">
-      <motion.div className=" text-8xl font-semibold my-10 text-topnotch-blue tracking-wide text-center">
+      <motion.div className=" text-7xl font-semibold my-10 text-topnotch-blue tracking-wide text-center">
         {bluetext} <span className="text-topnotch-yellow">{yellowtext}</span>
       </motion.div>
 
@@ -17,12 +17,12 @@ const ContactUs = ({ bluetext, yellowtext, description, buttontext }) => {
       >
         {description}
       </motion.p>
-      <motion.div className="my-10 text-5xl text-topnotch-blue font-light tracking-wide">
+      <motion.div className="my-10 text-topnotch-blue font-light tracking-wide">
         <button
           onClick={() => {
             window.location.href = `mailto:${email}?subject=Looking for a job`;
           }}
-          className="rounded-full border-4 px-24 py-5 border-topnotch-yellow"
+          className="rounded-full border-4 px-24 py-5 border-topnotch-yellow text-[30px]"
         >
           {buttontext}
         </button>
