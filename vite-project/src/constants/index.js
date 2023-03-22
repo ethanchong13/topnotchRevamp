@@ -1,4 +1,4 @@
-import { service1 , service2 ,service3 ,team1 ,team2,team3,team4,team5,team6,team7,team8} from "../assets/Images";
+import { service1 , service2 ,service3 ,team1 ,team2,team3,team4,team7, team_image} from "../assets/Images";
 
 export const email = "talent.acq@topnotchgroup.com.my"
 
@@ -28,7 +28,7 @@ export const teamImage =[
   },
   {
     id:2,
-    img:team2
+    img:team_image
   },
   {
     id:3,
@@ -44,7 +44,7 @@ export const teamImage =[
   },
   {
     id:8,
-    img:team8
+    img: team2
   },
   
 ]
