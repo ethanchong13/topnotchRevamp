@@ -7,7 +7,7 @@ const MeettheTeam = () => {
   return (
     <>
       <Title title="Meet the Team" />
-      <div className="justify-center grid mx-auto sm:grid-cols-3 grid-cols-2 gap-4 px-14 my-32">
+      <div className="justify-center grid mx-auto sm:grid-cols-3 grid-cols-2 gap-4 px-14 my-28">
         {teams.map((team) => {
           return (
             <TeamGrid

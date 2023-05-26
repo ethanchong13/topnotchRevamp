@@ -10,6 +10,9 @@ import team5 from "./team5.jpeg";
 import team6 from "./team6.jpeg";
 import team7 from "./team7.jpeg";
 import team8 from "./team8.jpeg";
+import facebook from "./facebook.svg"
+import instagram from "./instagram.svg"
+import linkedin from "./linkedin.svg"
 
 export {
   service1,
@@ -24,4 +27,7 @@ export {
   team7,
   team8,
   team_image,
+  facebook,
+  instagram,
+  linkedin
 };

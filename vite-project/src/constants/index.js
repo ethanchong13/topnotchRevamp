@@ -1,6 +1,22 @@
-import { service1 , service2 ,service3 ,team1 ,team2,team3,team4,team5,team6,team7,team8} from "../assets/Images";
+import { service1 , service2 ,service3 ,team1 ,team2,team3,team4,team7, team_image , facebook,instagram,linkedin} from "../assets/Images";
 
 export const email = "talent.acq@topnotchgroup.com.my"
+
+export const socialMeida = [
+  {
+    img:facebook,
+    link:"https://www.facebook.com/topnotchgroup.my",
+    id:"facebook"
+  },{
+    img:instagram,
+    link:"https://www.instagram.com/topnotchgroup.my/",
+    id:"instagram"
+  },{
+    img:linkedin,
+    link:"https://www.linkedin.com/company/topnotch-consulting-my/",
+    id:"linkedin"
+  },
+]
 
 export const services = [
   {
@@ -15,7 +31,7 @@ export const services = [
     img: service2
   },
   {
-    id: 2,
+    id: 3,
     title: "HR Strategies Consultation",
     img: service3
   },
@@ -28,7 +44,7 @@ export const teamImage =[
   },
   {
     id:2,
-    img:team2
+    img:team_image
   },
   {
     id:3,
@@ -39,20 +55,12 @@ export const teamImage =[
     img:team4
   },
   {
-    id:5,
-    img:team5
-  },
-  {
-    id:6,
-    img:team6
-  },
-  {
     id:7,
     img:team7
   },
   {
     id:8,
-    img:team8
+    img: team2
   },
   
 ]
